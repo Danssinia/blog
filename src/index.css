@@ -1,13 +1,101 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Quicksand';
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  margin:auto;
+  padding-top: 20px;
+  border-bottom: 2px solid rgb(214, 208, 208);
+}
+
+.navbar h1{
+  color: #f1356f;
+}
+
+.navbar .links{
+  margin-left:auto;
+  margin-right: 10px;
+}
+
+.navbar a{
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.navbar a:hover{
+  color: #f1356f;
+}
+
+.content{
+  margin:auto;
+  max-width: 600px;
+  margin-top:60px;
+  padding-left: 6px;
+}
+
+.blog-list{
+  padding: 10px 16px;
+}
+.blog-list:hover{
+  box-shadow: 1px 1px 1px #333;
+}
+
+.blog-list h2{
+  color: #f1356f;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.blog-list a{
+  text-decoration: none;
+}
+
+.blog-details h2{
+  color:#f1356f;
+}
+
+.create{
+  max-width: 400px;
+  margin:auto;
+  align-items: center;
+}
+
+.create h2{
+  font-size: 20px;
+  margin-bottom: 30px;
+  color:#f1356f;
+}
+
+.create input, .create textarea, .create select{
+  width: 100%;
+  padding:6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button{
+  background: #f1356f;
+  color: #fff;
+  border:0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.blog-details button{
+  background: #f1356f;
+  color: #fff;
+  border:0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
